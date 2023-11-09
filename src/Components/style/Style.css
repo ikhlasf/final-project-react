@@ -1,0 +1,134 @@
+.navbar {
+    align-items: center;
+    background-color: var(--variable-collection-col-bg);
+    display: flex;
+    height: 68px;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: relative;
+    width: 1280px;
+  }
+  
+  .navbar .text-wrapper {
+    color: var(--variable-collection-col-dark);
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: -7px;
+    margin-top: -9px;
+    position: relative;
+    width: 180px;
+    z-index: 2;
+  }
+  
+  .navbar .frame {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -6.75px;
+    margin-top: -6.75px;
+    padding: 10px;
+    position: relative;
+    width: 437px;
+    z-index: 1;
+  }
+  
+  .navbar .home-category {
+    color: var(--variable-collection-col-dark);
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.25px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .navbar .group {
+    height: 31.5px;
+    position: relative;
+    width: 34.5px;
+  }
+  
+  .navbar .overlap-group {
+    height: 31px;
+    position: relative;
+    width: 34px;
+  }
+  
+  .navbar .vector {
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 29px;
+  }
+  
+  .navbar .cart {
+    height: 27px;
+    left: 3px;
+    position: absolute;
+    top: 0;
+    width: 31px;
+  }
+  
+  .navbar .ellipse {
+    background-color: var(--variable-collection-col-prim);
+    border-radius: 5.07px/4.74px;
+    height: 9px;
+    left: 21px;
+    position: relative;
+    top: 4px;
+    width: 10px;
+  }
+  
+  .navbar .rectangle {
+    background-color: #c9a035;
+    height: 4px;
+    left: 10px;
+    position: absolute;
+    top: 38px;
+    width: 61px;
+  }
+  
+  .navbar .div {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    height: 35px;
+    justify-content: flex-end;
+    position: relative;
+    width: 278px;
+    z-index: 0;
+  }
+  
+  .navbar .button-instance {
+    border-radius: 15px !important;
+    margin-bottom: -0.5px !important;
+    margin-top: -0.5px !important;
+    z-index: 1 !important;
+  }
+  
+  .navbar .design-component-instance-node {
+    margin-left: unset !important;
+    margin-right: unset !important;
+  }
+  
+  .navbar .button-2 {
+    background-color: var(--variable-collection-col-dark) !important;
+    border-radius: 15px !important;
+    gap: 30px !important;
+    margin-bottom: -0.5px !important;
+    margin-top: -0.5px !important;
+    z-index: 0 !important;
+  }
+  
+  .navbar .button-3 {
+    color: var(--variable-collection-col-sec) !important;
+    margin-left: unset !important;
+    margin-right: unset !important;
+  }
+  
