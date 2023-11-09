@@ -4,8 +4,8 @@ import { useState } from "react";
 import Button from "../Components/Elements/Button/Button";
 import { LayDetailModal } from "../Components/Layouts/LayDetailModal";
 import { datalist, materilist } from "../Data/Datalist";
-import Td from "../Components/Elements/Etc/STd";
-import Th from "../Components/Elements/Etc/STh";
+import td from "../Components/Elements/Etc/Std";
+import th from "../Components/Elements/Etc/Sth";
 import { Link  } from "react-router-dom";
 
 const email = localStorage.getItem('email');
@@ -53,21 +53,25 @@ const PHome = () => {
                         <LayDetailModal.Header Judul={data.judul} Detail={data.detail} />
 
                         <table>
-                                <tr>
-                                    <Th>No</Th>
-                                    <Th>Materi</Th>
-                                    <Th>Mentor</Th>
-                                    <Th>Durasi</Th>
+                            <thead>
+                                <tr key={data.id}>
+                                    <th className="border border-slate-700">No</th>
+                                    <th className="border border-slate-700">Materi</th>
+                                    <th className="border border-slate-700">Mentor</th>
+                                    <th className="border border-slate-700">Durasi</th>
                                 </tr>
+                            </thead>
                                 {materilist
                                 .filter ( (lop) => lop.id === nomor )
                                 .map ( (lop) => 
+                            <tbody>
                                     <tr key={lop.id}>
-                                        <Td>{lop.no}</Td>
-                                        <Td>{lop.materi}</Td>
-                                        <Td>{lop.mentor}</Td>
-                                        <Td>{lop.durasi}</Td>
+                                        <td className="border border-slate-700">{lop.no}</td>
+                                        <td className="border border-slate-700">{lop.materi}</td>
+                                        <td className="border border-slate-700">{lop.mentor}</td>
+                                        <td className="border border-slate-700">{lop.durasi}</td>
                                     </tr>
+                            </tbody>
                                 )}
                             </table>
                         

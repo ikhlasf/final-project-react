@@ -39,11 +39,11 @@ import PNBayar from "./pnbayar";
                             <li><H4 classname="font-bold text-lg text-blue-600">Zuhri Almanah (Admin 3) : <a href="#" className=" text-orange-800">Link</a></H4></li>
                         </ul>
                     </div>
-                    <H4 className=" italic">Segala bentuk pembayaran yang dikirimkan tidak secara otomatis dapat diverifikasi, mohon berikan informasi pada admin melalui chat whatsapp
+                    <h4 className=" italic">Segala bentuk pembayaran yang dikirimkan tidak secara otomatis dapat diverifikasi, mohon berikan informasi pada admin melalui chat whatsapp
                         dengan menyertakan bukti transfer, setelah data diverifikasi oleh admin maka akan ada pemberitahuan melalui email,
                         berikut dengan link zoom meeting dan dokumentasi materi yang akan diberikan. harap mengecek secara berkala.<br/><br/><br/>
                         Termakasih
-                    </H4>
+                    </h4>
                
                     </div>
                     </div>
