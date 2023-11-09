@@ -65,7 +65,7 @@ const PHome = () => {
                                 .filter ( (lop) => lop.id === nomor )
                                 .map ( (lop) => 
                             <tbody>
-                                    <tr key={lop.id}>
+                                    <tr key={lop.no}>
                                         <td className="border border-slate-700">{lop.no}</td>
                                         <td className="border border-slate-700">{lop.materi}</td>
                                         <td className="border border-slate-700">{lop.mentor}</td>
