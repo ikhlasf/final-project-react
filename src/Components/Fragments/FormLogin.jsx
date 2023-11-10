@@ -10,6 +10,7 @@ const FormLogin = () => {
         // tangkap value dengan nama input =email dan password
         localStorage.setItem("email",e.target.email.value);
         localStorage.setItem("pass",e.target.password.value);
+        window.location.href="/home"
     }
     return (
         <form onSubmit={handleLogin}>
@@ -27,7 +28,7 @@ const FormLogin = () => {
                 name="password"
             />
             
-            <Link to="/home" ><Button classname="bg-blue-600 w-full" tipe="submit" >Login</Button></Link>
+           <Button classname="bg-blue-600 w-full" tipe="submit" >Login</Button>
         </form>
 
     )
