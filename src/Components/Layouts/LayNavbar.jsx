@@ -8,7 +8,7 @@ const handleLogOut = (e)=> {
     localStorage. removeItem('pass')
     localStorage. removeItem('cart')
     localStorage. removeItem('bayar')
-    window.location.href="/login"
+    window.location.href="/"
 }
 
 const LayNavbar = (props) => {
