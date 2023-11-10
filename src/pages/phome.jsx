@@ -21,6 +21,7 @@ const PHome = () => {
     
 
     const handleAddCart = (e)=> {
+        localStorage.removeItem("bayar");
         localStorage.setItem("cart", nomor)
     }
 
