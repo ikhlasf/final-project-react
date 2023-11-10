@@ -4,8 +4,6 @@ import { useState } from "react";
 import Button from "../Components/Elements/Button/Button";
 import { LayDetailModal } from "../Components/Layouts/LayDetailModal";
 import { datalist, materilist } from "../Data/Datalist";
-import td from "../Components/Elements/Etc/Std";
-import th from "../Components/Elements/Etc/Sth";
 import { Link  } from "react-router-dom";
 
 const email = localStorage.getItem('email');
@@ -23,6 +21,7 @@ const PHome = () => {
     
 
     const handleAddCart = (e)=> {
+        localStorage. removeItem('bayar')
         localStorage.setItem("cart", nomor)
     }
 
@@ -61,18 +60,20 @@ const PHome = () => {
                                     <th className="border border-slate-700">Durasi</th>
                                 </tr>
                             </thead>
+                            <tbody>
                                 {materilist
                                 .filter ( (lop) => lop.id === nomor )
                                 .map ( (lop) => 
-                            <tbody>
-                                    <tr key={lop.id}>
+                            
+                                    <tr key={lop.no}>
                                         <td className="border border-slate-700">{lop.no}</td>
                                         <td className="border border-slate-700">{lop.materi}</td>
                                         <td className="border border-slate-700">{lop.mentor}</td>
                                         <td className="border border-slate-700">{lop.durasi}</td>
                                     </tr>
-                            </tbody>
+                            
                                 )}
+                            </tbody>
                             </table>
                         
 
