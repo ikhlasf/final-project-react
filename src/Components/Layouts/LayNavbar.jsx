@@ -39,7 +39,7 @@ const LayNavbar = (props) => {
                         <Link to="/status" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-slate-900 md:dark:hover:text-slate-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Status</Link>
                         </li>
                         <li>
-                        <Link to="/login" ><Button onclick={handleLogOut} classname="bg-slate-900 text-slate-300 h-7">Log Out</Button></Link>
+                        <Button onclick={handleLogOut} classname="bg-slate-900 text-slate-300 h-7">Log Out</Button>
                         </li>
                     </ul>
                     </div>
