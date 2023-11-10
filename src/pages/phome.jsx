@@ -21,7 +21,6 @@ const PHome = () => {
     
 
     const handleAddCart = (e)=> {
-        localStorage. removeItem('bayar')
         localStorage.setItem("cart", nomor)
     }
 
@@ -64,8 +63,8 @@ const PHome = () => {
                                 {materilist
                                 .filter ( (lop) => lop.id === nomor )
                                 .map ( (lop) => 
-                            
-                                    <tr key={lop.no}>
+                            <tbody>
+                                    <tr key={lop.id}>
                                         <td className="border border-slate-700">{lop.no}</td>
                                         <td className="border border-slate-700">{lop.materi}</td>
                                         <td className="border border-slate-700">{lop.mentor}</td>
